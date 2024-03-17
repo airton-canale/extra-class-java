@@ -10,16 +10,24 @@ class Exercicio12 {
   public static void main(String args[]){
     Scanner input = new Scanner(System.in);
     System.out.println("Seu animal faz quack? sim ou nao");
-    String isDuck = input.NextLine();
+    String isDuck = input.nextLine();
     int counter = 0;
     if (isDuck.equals("sim")) {
         System.out.println("Seu animal anda como um pato? sim ou nao");
-        isDuck = input.NextLine();
+        isDuck = input.nextLine();
         if (isDuck.equals("sim")) {
           System.out.println("Seu animal nada como um pato? sim ou nao");
+          isDuck = input.nextLine();
+          if (isDuck.equals("sim")) {
+          System.out.println("Seu animal eh um pato!");
+        } else {
+          System.out.println("Seu animal nao eh um pato, pois ele nao nada como um!");
+        }
+        } else {
+          System.out.println("Seu animal nao eh um pato, pois ele nao anda como um!");
         }
     }else {
-        System.out.println("Seu animal nao eh um pato");
+        System.out.println("Seu animal nao eh um pato, pois ele nao faz quack!");
     }
 
   }
