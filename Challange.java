@@ -38,7 +38,7 @@ class Challange {
               moedaOrigem +
               " " +
               "convertido para " +
-              "USD eh " +
+              "USD eh  " +
               valorConvertido
             );
           } else {
