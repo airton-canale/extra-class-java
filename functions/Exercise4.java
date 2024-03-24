@@ -7,7 +7,7 @@ import java.util.Scanner;
 public class Exercise4 {
   public static void main(String args[]){
     Scanner input = new Scanner(System.in);
-    System.out.println("Digite sua idade e o valor da compra: ");
+    System.out.println("Digite sua idade e o valor da sua compra: ");
     int idade = input.nextInt();
     double valorCompra = input.nextDouble();
 
